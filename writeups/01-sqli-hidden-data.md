@@ -1,5 +1,3 @@
-writeups/01-sqli-hidden-data.md
-
 # 01 — SQL Injection: Retrieving Hidden Data
 
 *Platform:* PortSwigger Web Security Academy (Apprentice lab)
@@ -13,7 +11,7 @@ The goal: make the app show unreleased products.
 
 ## Attack
 I changed the `category` parameter in the URL to:
-`'%27+OR+1=1--`
+`%27+OR+1=1--`
 
 ## Result
 The page listed every product, including unreleased ones, and the lab was marked solved.
